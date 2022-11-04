@@ -7,9 +7,140 @@
 font-family: 'Crimson Text', serif;
 font-family: 'Noto Sans KR', sans-serif;
  */
+ :root{
+     --main-color:#0c2d83;
+     --bg-color-light: #f5f5f5;
+     --text-light: #666666;
+     --white: #fff;
+ }
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    background-color: var(--white);
 }
 h1{
     font-family: 'Crimson Text', serif;
+    font-size: 26px;
+} 
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 20px;
+}
+a{
+    color: #000;
+}
+.container{
+    max-width: 1440px;
+   /*  outline: 2px solid #333; */
+    margin: 0 auto;
+    position: relative;
+}
+#main-header{
+    height: 80px;
+    /* background-color: #ccc; */
+}
+
+#main-header h1{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+#gnb{
+    position: absolute;
+    right: 97px;
+    top: 28px;
+    z-index: 999;
+}
+/* 1단계메뉴 */
+#gnb .depth1{
+    display: flex;
+}
+
+#gnb .depth1 > li{
+    margin-left: 20px;
+   /*  outline: 1px solid red; */
+    width: 7em; /* depth1의 사이즈 고정- depth2가 흔들리는 것을 방지 */
+    text-align: center;
+}
+#gnb .depth1 > li >a{
+    font-size: 18px;
+    font-weight: 500;
+}
+/* 2단계메뉴 */
+#gnb .depth2{
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 26px;
+    display: none; /* 2단계 메뉴를 일단 꺼놨는데 나중에 2단계 메뉴에 호버효과 줘!! */
+}
+#gnb .depth2 > li{
+    margin-bottom: 10px;
+    text-align: left;
+}
+#gnb .depth2 > li:last-child{
+    margin-bottom: 0;
+}
+/* hover 액션 */
+#gnb .depth1 > li:hover .depth2{
+    display: block;
+}
+/* 1단계메뉴에 호버시 글자색상 변경 */
+#gnb .depth1 > li > a:hover{
+    color: var(--main-color);
+}
+/* 2단계메뉴에 호버시 언더라인 */
+#gnb .depth2 > li > a:hover{
+    text-decoration: underline;
+}
+/* toggle */
+#btn-toggle{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+/* 메인배너 */
+#main-banner{
+    height: 480px;
+    background-color: #000;
+}
+#main-banner .container{
+    height: 100%;
+    background-image: url(../images/main-banner1.jpg);
+    display: flex;
+    align-items: center;
+}
+#main-banner h1{
+    color: #fff;
+    padding-left: 56px;
+    font-size: 60px;
+    font-weight: 400;
+}
+/* 섹션2 introduction */
+#intro .container{
+    padding: 50px 20px;
+    /* outline: 1px solid red; */
+}
+#intro .intro-list{
+    display: flex;
+    gap: 20px; /* 사이 여백 넣기 자동추가 */
+    /* justify-content:space-between; 해도 됨 */
+    text-align: center;
+}
+#intro .intro-list > li{
+    /* outline: 1px solid red; */
+    width: calc((100% - 60px) / 4);
+}
+#intro .intro-list > li img{
+    width: 100%; 
+}
+#intro .intro-list h1{
+    margin-bottom: 20px;
+}
+#intro .intro-list h2{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
