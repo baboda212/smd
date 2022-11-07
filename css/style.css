@@ -131,16 +131,113 @@ a{
 }
 #intro .intro-list > li{
     /* outline: 1px solid red; */
+    /* (너비(100%) - 칼럼여백의 합(col수 - 1)) / 칼럼수 */
     width: calc((100% - 60px) / 4);
 }
 #intro .intro-list > li img{
     width: 100%; 
 }
-#intro .intro-list h1{
+#intro h1{
     margin-bottom: 20px;
 }
 #intro .intro-list h2{
     font-size: 22px;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+/* notice */
+#notice{
+    background-color: var(--bg-color-light);
+}
+#notice .container{
+    padding: 50px 20px;
+    /* outline: 1px solid red; */    
+}
+#notice .icon-list{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    /* width: 100%; */
+    /* outline: 1px solid red;  */
+}
+#notice .icon-list > li{
+     /* outline: 1px solid red;   */
+    /* (너비(100%) - 칼럼여백의 합(col수 - 1)) / 칼럼수 */
+    width: calc((100% - 40px) / 3);
+    padding: 50px;
+    padding-bottom: 50px;
+}
+#notice .icon-list a{
+    text-decoration: underline;
+}
+.btn-more{
+    font-size: 14px;
+    color: #666;
+}
+#notice .icon-list :nth-child(2) img{
+    margin-bottom: 10px;
+}
+#notice .icon-list > li .icon-group h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* 썜파일
+#notice .container {
+  padding: 50px 20px;
+  outline: 1px solid #000;
+}
+
+#notice .icons-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#notice .icons-list > li {
+  outline: 2px solid red;
+  width: calc((100% - 40px) / 3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
+
+/* sns banner */
+#sns-banner .container{
+    background-image: url(../images/banner-bg.jpg);
+    color: #fff;
+    padding: 40px 70px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sns-banner .container h1{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+#sns-banner .sns-icon-group a{
+    margin-left: 28px;
+}
+
+/* footer */
+#main-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 90px;
+}
+#main-footer .container{
+    padding: 50px 20px;
+}
+#main-footer .footer-menu{
+    margin-bottom: 15px;
+}
+#main-footer .footer-menu a{
+    font-size: 14px;
+    color: #444;
+}
+#main-footer address, .copy{
+    font-size: 12px;
+    font-style: normal;
+    color: #666;
+    margin-bottom: 5px;
 }
