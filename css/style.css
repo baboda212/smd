@@ -31,6 +31,9 @@ h3{
 a{
     color: #000;
 }
+p{
+    line-height: 26px;
+}
 .container{
     max-width: 1440px;
    /*  outline: 2px solid #333; */
@@ -240,4 +243,137 @@ a{
     font-style: normal;
     color: #666;
     margin-bottom: 5px;
+}
+ 
+/* 사이트맵 팝업 */
+#site-map-menu{
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    background: #fff;
+    /* 포지션 중앙정렬 */
+    left: calc(50%);
+    top: calc(50%);
+    /* 사이트 맵을 2/1만큼 당겨서 중앙정렬로 맞춤 */
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1000;
+    border: 1px solid #ccc;
+    padding: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#site-map-menu .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#site-map-menu .container{
+    /* outline: 1px solid #333; */
+    position: relative;
+    height: 100%;
+    padding-left: 9%;
+    padding-right: 9%;
+} 
+#site-menu-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#site-map-menu .site-menu{
+    /* outline: 1px solid #333; */
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#site-map-menu .site-menu > ul.depth1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#site-map-menu .site-menu > ul.depth1 >li{
+    width: 33.33%;
+    height: 50%;
+}
+/* 1단계 메뉴 텍스트(제목) */
+#site-map-menu .site-menu > ul.depth1 > li >a{
+    font-size: 20px;
+    font-weight: bold;
+}
+#site-map-menu .site-menu .depth2{
+    margin-top: 10px;
+    line-height: 1.8em;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+#site-map-menu .site-menu .depth2 a{
+    color: #444;
+}
+
+/* 썜정리
+#site-map-menu .container {
+  outline: 1px solid #333;
+  outline: 1px solid red;
+  position: relative;
+  height: 100%;
+}
+
+#site-map-menu .site-menu {
+#site-map-menu nav.site-menu {
+  outline: 1px solid #333;
+  background: pink;
+  height: 100%;
+  display: flex;
+  align-items: space-between;
+  padding-top: 150px;
+}
+
+#site-map-menu .site-menu > ul.depth1 {
+  display: flex;
+  flex-wrap: wrap;
+  background: lightgreen;
+  width: 100%;
+}
+
+#site-map-menu .site-menu > ul.depth1 > li {
+@@ -293,4 +302,30 @@ a {
+#site-map-menu .site-menu > ul.depth1 > li > a {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#site-menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#site-map-menu .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#site-map-menu .site-menu .depth2 {
+  padding: 10px;
+}
+
+#site-map-menu .site-menu .depth2 > li {
+  margin-bottom: 10px;
+}
+
+#site-map-menu .site-menu .depth2 a {
+  color: #444;
+}
+*/
+
+/* 사이트맵 메뉴 비표시 상태 */
+#site-map-menu{
+    display: none;
+}
+
+/* 사이트맵 표시상태 */
+#site-map-menu.show{
+    display: block;
 }

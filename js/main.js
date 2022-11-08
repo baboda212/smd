@@ -2,6 +2,7 @@
 console.log('main.js');
 
 //준비함수
+//메인이미지 슬라이더
 $(function(){
     //배너 이미지 배열 생성
     let bgArr = [
@@ -28,5 +29,14 @@ $(function(){
  
     },5000);
     
+});
+/* 사이트맵 팝업창 */
+$(function(){
+    $('#btn-toggle').on('click', function(){
+        $('#site-map-menu').toggleClass('show');
+    });
 
+    $('#site-menu-close').on('click', function(){
+        $('#site-map-menu').removeClass('show');
+    });
 });
