@@ -1,3 +1,5 @@
+@import "sub3-1.css";
+/* css파일을 붙이는 방법 */
 /* 서브홈페이지용 타이틀 css (서브공통)*/
 #sub-title h1{
     font-size: 40px;
@@ -100,40 +102,6 @@
     font-size: 20px;
 }
 
-/* 무용단소개서브페이지 */
-#k-dance #sub-title{
-    background-image: url(../images/sub-title-visual3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: cover; */
-}
-#k-dance #section1 .container p{
-    margin-bottom: 50px;
-} 
-#k-dance .list .container{
-    padding: 20px;
-}
-#k-dance .list ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-#k-dance .list ul li {
-    width: 50%;
-   /*  outline: 1px solid red;  */
-    display: flex;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.li-1{
-    width: 15%;
-}
-.li-2{
-    width: 85%;
-}
-.list h1{
-    font-family: 'Noto Sans KR', sans-serif;
-    margin-bottom: 30px;
-}
 /* 서브 교육목표 */
 #edu1 #sub-title{
     background-image: url(../images/sub-title-visual4.jpg);

@@ -1,0 +1,35 @@
+/* 3-1.css */
+/* 무용단소개서브페이지(한국무용) */
+#k-dance #sub-title{
+    background-image: url(../images/sub-title-visual3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
+}
+#k-dance #section1 .container p{
+    margin-bottom: 50px;
+} 
+#k-dance .list .container{
+    padding: 20px;
+}
+#k-dance .list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#k-dance .list ul li {
+    width: 50%;
+   /*  outline: 1px solid red;  */
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.li-1{
+    width: 15%;
+}
+.li-2{
+    width: 85%;
+}
+.list h1{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+}
