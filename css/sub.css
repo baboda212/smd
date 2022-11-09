@@ -1,3 +1,4 @@
+@import "sub3-1.css";
 /* 서브홈페이지용 타이틀 css (서브공통)*/
 #sub-title h1{
     font-size: 40px;
@@ -100,7 +101,7 @@
     font-size: 20px;
 }
 
-/* 무용단소개서브페이지 */
+/* 무용단소개서브페이지(한국무용) */
 #k-dance #sub-title{
     background-image: url(../images/sub-title-visual3.jpg);
     background-repeat: no-repeat;
