@@ -34,6 +34,12 @@ a{
 p{
     line-height: 26px;
 }
+table{
+    border-collapse: collapse;
+}
+table, th, td {
+    border-style: none;
+}
 .container{
     max-width: 1440px;
    /*  outline: 2px solid #333; */
@@ -75,10 +81,15 @@ p{
 #gnb .depth2{
     background: #fff;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 14px;
     margin-top: 26px;
-    display: none; /* 2단계 메뉴를 일단 꺼놨는데 나중에 2단계 메뉴에 호버효과 줘!! */
+    /* display: none; */ /* 2단계 메뉴를 일단 꺼놨는데 나중에 2단계 메뉴에 호버효과 줘!! 아래 부분 효과부분*/
     border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    /* transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22); */
 }
 #gnb .depth2 > li{
     margin-bottom: 10px;
@@ -89,7 +100,9 @@ p{
 }
 /* hover 액션 */
 #gnb .depth1 > li:hover .depth2{
-    display: block;
+    /* display: block; */
+    max-height: 200px;
+    opacity: 1;
 }
 /* 1단계메뉴에 호버시 글자색상 변경 */
 #gnb .depth1 > li > a:hover{
@@ -281,6 +294,9 @@ p{
     position: absolute;
     right: 0;
     top: 0;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
 }
 #site-map-menu .site-menu{
     /* outline: 1px solid #333; */

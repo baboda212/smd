@@ -66,3 +66,36 @@
     text-align: left;
     font-size: 15px;  
 }
+
+/* location  고유영역*/
+#location #sub-title{
+    background-image: url(../images/sub-title-visual2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
+}
+#location #map .container{
+    padding: 70px 0 50px;
+}
+#location .location-info .container{
+    /* outline: 1px solid #000; */
+    display: flex;
+}
+#location .location-info .container img{
+    width: 50%;
+}
+#location .location-info .container .address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#location .location-info .container th, td{
+    padding: 5px;
+    padding-left: 1em;
+}
+#location .location-info .container th{
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+}
