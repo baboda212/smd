@@ -30,7 +30,7 @@ $(function(){
     },5000);
     
 });
-/* 사이트맵 팝업창 */
+/* pc사이트맵(모바일GNB) 팝업창 */
 $(function(){
     $('#btn-toggle').on('click', function(){
         $('#site-map-menu').toggleClass('show');
@@ -40,3 +40,16 @@ $(function(){
         $('#site-map-menu').removeClass('show');
     });
 });
+
+/* 모바일에서 1단계 메뉴시 링크 차단-기본이벤트 차단  GNB 1단계 a기본이벤트 제거*/
+// #site-map-menu
+$(function(){
+    $('#site-map-menu .site-menu .depth1 > li > a')
+    .on('click',function(event){
+        //클릭한 버튼의 다음형제(next)depth2에 toggle기능 추가
+        $(this).next().toggleClass('show');
+        event.preventDefault();
+    })
+   
+});
+
